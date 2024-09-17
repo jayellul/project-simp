@@ -2,22 +2,27 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Password from './Password';
+import CutesyFartsy from './CutesyFartsy';
 
 const App = () => {
   const [loggedIn, setLoggedIn] = React.useState(false);
   const onSuccess = () => {
     setLoggedIn(true);
   };
+
+  const getBg = () => {
+    if (!loggedIn) {
+      return '#141414';
+    }
+    if (loggedIn) {
+      return '#FFBBEC';
+    }
+  };
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" style={{ backgroundColor: getBg() }}>
         {!loggedIn && <Password onSuccess={onSuccess} />}
-        {loggedIn && (
-          <div>
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>Welcome to the secret area!</p>
-          </div>
-        )}
+        {loggedIn && <CutesyFartsy />}
       </header>
     </div>
   );
