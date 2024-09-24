@@ -1,5 +1,6 @@
 import React from 'react';
 import './Password.css';
+import { Fade } from 'react-awesome-reveal';
 
 const password = 'pikachu';
 
@@ -23,24 +24,26 @@ export const Password = ({ onSuccess }) => {
   };
   return (
     <div className="password">
-      {attempts >= 3 && <p>You can refresh and try again baby ;)</p>}
-      {attempts < 3 && (
-        <div>
-          <p>Enter the password:</p>
+      <Fade duration={500} delay={500}>
+        {attempts >= 3 && <p>You can refresh and try again baby ;)</p>}
+        {attempts < 3 && (
           <div>
-            <input className="password-input" onChange={onChange} />
+            <p>Enter the password:</p>
+            <div>
+              <input className="password-input" onChange={onChange} />
+            </div>
+            <button className="password-submit" onClick={onSubmit}>
+              Submit
+            </button>
           </div>
-          <button className="password-submit" onClick={onSubmit}>
-            Submit
-          </button>
-        </div>
-      )}
-      <p className="password-hint">Remaining attempts: {remainingAttempts}</p>
-      {showHint && (
-        <p className="password-hint">
-          Hint: Name of our first biological child
-        </p>
-      )}
+        )}
+        <p className="password-hint">Remaining attempts: {remainingAttempts}</p>
+        {showHint && (
+          <p className="password-hint">
+            Hint: Name of our first biological child
+          </p>
+        )}
+      </Fade>
     </div>
   );
 };

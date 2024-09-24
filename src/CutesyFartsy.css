@@ -20,16 +20,53 @@
   }
   width: 80%;
   height: 90%;
+  color: #141414;
+  padding: 16px;
+  overflow-y: auto;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+.cutesy-divider {
+  margin: 32px;
+}
+.cutesy-eyes {
+  position: relative;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.eyes-eyes {
+  /* display: inline; */
 }
 
 .cutesy-hearts {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 100vw;
-  max-height: 100vh;
+  width: 100%;
+  height: 100%;
   font-size: 36px;
   overflow-x: hidden;
   overflow-y: hidden;
   pointer-events: none;
+}
+
+.cutesy-heart {
+  display: inline-block;
 }

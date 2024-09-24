@@ -5,7 +5,7 @@ import Password from './Password';
 import CutesyFartsy from './CutesyFartsy';
 
 const App = () => {
-  const [loggedIn, setLoggedIn] = React.useState(false);
+  const [loggedIn, setLoggedIn] = React.useState(true);
   const onSuccess = () => {
     setLoggedIn(true);
   };

@@ -14,8 +14,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+* {
+  margin-top: 0;
 }
