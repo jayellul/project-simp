@@ -28,6 +28,7 @@ export const CutesyFartsy = () => {
             <h2>Endless otter time</h2>
             <img src={otter} />
             <br />
+
             <h2>Diddles</h2>
             <div className="cutesy-eyes">
               {Array.from({ length: 20 }).map((_, i) => (
