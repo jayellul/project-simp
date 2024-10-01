@@ -14,12 +14,14 @@
   z-index: 10;
   position: relative;
   text-align: left;
+  font-family: 'Nanum Pen Script', cursive;
+
   @media (min-width: 768px) {
     width: 50%;
     height: 80%;
   }
-  width: 80%;
-  height: 90%;
+  width: 90%;
+  height: 92%;
   color: #141414;
   padding: 16px;
   overflow-y: auto;
@@ -30,12 +32,46 @@
 
   h2 {
     margin-bottom: 8px;
+    font-size: 1.75rem;
   }
 
   img {
     width: 100%;
     border-radius: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 1.35rem;
+    font-family: 'Comic Neue', cursive;
+  }
+}
+
+.promise {
+  margin-bottom: 48px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  button {
+    margin: 0 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #141414;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 25%;
+    &.yes {
+      background-color: #5cb85c;
+      color: #ffffff;
+    }
+    &.no {
+      background-color: #ed4337;
+      color: #ffffff;
+    }
   }
 }
 
@@ -51,17 +87,13 @@
   flex-wrap: wrap;
 }
 
-.eyes-eyes {
-  /* display: inline; */
-}
-
 .cutesy-hearts {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  font-size: 36px;
+  font-size: 1.25rem;
   overflow-x: hidden;
   overflow-y: hidden;
   pointer-events: none;
