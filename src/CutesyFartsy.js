@@ -7,23 +7,8 @@ import gordon from './img/gordon.gif';
 import saltlake from './img/saltlake.jpg';
 import listening from './img/listening.jpeg';
 
-export const CutesyFartsy = () => {
-  const [hearts, setHearts] = React.useState(1000);
-  const [yesClicked, setYesClicked] = React.useState(false);
+export const CutesyFartsy = ({ onSuccess }) => {
   const [noClicked, setNoClicked] = React.useState(false);
-
-  // React.useEffect(() => {
-  //   const heartbeat = setInterval(() => {
-  //     setHearts((hearts) => hearts + 1);
-  //     if (hearts > 500) {
-  //       clearInterval(heartbeat);
-  //     }
-  //   }, 250);
-
-  //   return () => {
-  //     clearInterval(heartbeat);
-  //   };
-  // }, []);
 
   return (
     <div className="cutesy">
@@ -66,11 +51,13 @@ export const CutesyFartsy = () => {
           <hr />
           <p style={{ textAlign: 'center' }}>
             <br />
-            How about we make it official and be my girlfriend?
+            How about we make it official...
+            <br />
+            Will you be my girlfriend?
           </p>
 
           <div className="buttons">
-            <button className="yes" onClick={() => setYesClicked(true)}>
+            <button className="yes" onClick={onSuccess}>
               Yes!!
             </button>
             <button className="no" onClick={() => setNoClicked(true)}>
@@ -79,14 +66,13 @@ export const CutesyFartsy = () => {
           </div>
         </div>
       </Slide>
-
-      <div className="cutesy-hearts">
-        {Array.from({ length: hearts }).map((_, i) => (
-          <span className="cutesy-heart" key={i}>
-            💖✨💕✨
-          </span>
-        ))}
-      </div>
+      {/* <div className="cutesy-hearts">
+          {Array.from({ length: 1000 }).map((_, i) => (
+            <span className="cutesy-heart" key={i}>
+              💖✨💕✨
+            </span>
+          ))}
+      </div> */}
     </div>
   );
 };

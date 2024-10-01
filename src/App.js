@@ -1,28 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Password from './Password';
 import CutesyFartsy from './CutesyFartsy';
+import Yippie from './Yippie';
 
 const App = () => {
-  const [loggedIn, setLoggedIn] = React.useState(true);
+  const [phase, setPhase] = React.useState(1);
+  console.log('p: ', phase);
+
   const onSuccess = () => {
-    setLoggedIn(true);
+    setPhase((prev) => prev + 1);
   };
 
   const getBg = () => {
-    if (!loggedIn) {
-      return '#141414';
+    if (phase === 2) {
+      return '#d161a2';
     }
-    if (loggedIn) {
-      return '#FFBBEC';
+    if (phase === 3) {
+      return '#61dafb';
     }
+    return '#141414';
   };
+
   return (
     <div className="App">
       <header className="App-header" style={{ backgroundColor: getBg() }}>
-        {!loggedIn && <Password onSuccess={onSuccess} />}
-        {loggedIn && <CutesyFartsy />}
+        {phase === 1 && <Password onSuccess={onSuccess} />}
+        {phase === 2 && <CutesyFartsy onSuccess={onSuccess} />}
+        {phase === 3 && <Yippie />}
       </header>
     </div>
   );

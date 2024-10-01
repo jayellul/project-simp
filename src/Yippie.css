@@ -1,0 +1,12 @@
+.yippie {
+  padding: 16px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.yippie-text {
+  color: #ffffff;
+  font-size: 2rem;
+}
