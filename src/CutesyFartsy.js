@@ -1,6 +1,6 @@
 import React from 'react';
 import './CutesyFartsy.css';
-import { AttentionSeeker, Slide, Fade } from 'react-awesome-reveal';
+import { Slide } from 'react-awesome-reveal';
 import otter from './img/otter.gif';
 import cafenone from './img/cafenone.webp';
 import gordon from './img/gordon.gif';
