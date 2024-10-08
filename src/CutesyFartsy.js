@@ -1,6 +1,5 @@
 import React from 'react';
 import './CutesyFartsy.css';
-import { Slide } from 'react-awesome-reveal';
 import otter from './img/otter.gif';
 import cafenone from './img/cafenone.webp';
 import gordon from './img/gordon.gif';
@@ -12,67 +11,58 @@ export const CutesyFartsy = ({ onSuccess }) => {
 
   return (
     <div className="cutesy">
-      <Slide className="cutesy-list" direction="down">
-        <div>
-          <h1>For Adela 💗</h1>
-          <p>Hey babygirl...</p>
-          <p>These are some things I want to do for you as your girlfriend:</p>
+      <div className="cutesy-list">
+        <h1>For Adela 💗</h1>
+        <p>Hey babygirl...</p>
+        <p>These are some things I want to do for you as your girlfriend:</p>
 
-          <div className="promise">
-            <h2>Endless otter time 🦦</h2>
-            <img src={otter} />
-            <p>this is literally us</p>
-          </div>
-          <div className="promise">
-            <h2>I'll always make you laugh</h2>
-            <img src={cafenone} />
-            <p>bouncing off the walls</p>
-          </div>
-          <div className="promise">
-            <h2>And be your personal chef 👩‍🍳</h2>
-            <img src={gordon} />
-            <p>needs more garlic</p>
-          </div>
-          <div className="promise">
-            <h2>Go on adventures together</h2>
-            <img src={saltlake} />
-            <p>let's travel</p>
-          </div>
-          <div className="promise">
-            <h2>Always be there for you 👂</h2>
-            <img src={listening} />
-            <p>tell me about your day baby</p>
-          </div>
-          <div className="promise">
-            <h2>Diddles 👀</h2>
-            <p>...</p>
-            <p>(iykyk)</p>
-          </div>
-          <hr />
-          <p style={{ textAlign: 'center' }}>
-            <br />
-            How about we make it official...
-            <br />
-            Will you be my girlfriend?
-          </p>
-
-          <div className="buttons">
-            <button className="yes" onClick={onSuccess}>
-              Yes!!
-            </button>
-            <button className="no" onClick={() => setNoClicked(true)}>
-              {noClicked ? 'Bruh' : 'No.'}
-            </button>
-          </div>
+        <div className="promise">
+          <h2>Endless otter time 🦦</h2>
+          <img src={otter} />
+          <p>this is literally us</p>
         </div>
-      </Slide>
-      {/* <div className="cutesy-hearts">
-          {Array.from({ length: 1000 }).map((_, i) => (
-            <span className="cutesy-heart" key={i}>
-              💖✨💕✨
-            </span>
-          ))}
-      </div> */}
+        <div className="promise">
+          <h2>I'll always make you laugh</h2>
+          <img src={cafenone} />
+          <p>bouncing off the walls</p>
+        </div>
+        <div className="promise">
+          <h2>And be your personal chef 👩‍🍳</h2>
+          <img src={gordon} />
+          <p>needs more garlic</p>
+        </div>
+        <div className="promise">
+          <h2>Go on adventures together</h2>
+          <img src={saltlake} />
+          <p>let's travel</p>
+        </div>
+        <div className="promise">
+          <h2>Always be there for you 👂</h2>
+          <img src={listening} />
+          <p>tell me about your day baby</p>
+        </div>
+        <div className="promise">
+          <h2>Diddles 👀</h2>
+          <p>...</p>
+          <p>(iykyk)</p>
+        </div>
+        <hr />
+        <p style={{ textAlign: 'center' }}>
+          <br />
+          How about we make it official...
+          <br />
+          Will you be my girlfriend?
+        </p>
+
+        <div className="buttons">
+          <button className="yes" onClick={onSuccess}>
+            Yes!!
+          </button>
+          <button className="no" onClick={() => setNoClicked(true)}>
+            {noClicked ? 'Bruh' : 'No.'}
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

@@ -10,7 +10,9 @@ export const Yippie = () => {
     <div className="yippie">
       <p className="yippie-text">YIPPIEEEE!! 👩🏼‍❤️‍💋‍👩🏻</p>
       <img className="yippie-img" src={flag} alt="flag" />
-      <p>I know I asked {timeSinceAsking} but still ;)</p>
+      <p className="yippie-text">
+        I know I asked {timeSinceAsking} but still ;)
+      </p>
     </div>
   );
 };

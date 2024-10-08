@@ -17,7 +17,7 @@ const App = () => {
       return '#d161a2';
     }
     if (phase === 3) {
-      return '#61dafb';
+      return '#FFFAA0';
     }
     return '#141414';
   };
