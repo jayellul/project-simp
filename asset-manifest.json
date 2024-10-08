@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.71abad35.css",
+    "main.js": "/static/js/main.67e07c0e.js",
+    "static/js/453.48937e7d.chunk.js": "/static/js/453.48937e7d.chunk.js",
+    "static/media/gordon.gif": "/static/media/gordon.794132ac492a774f02ac.gif",
+    "static/media/otter.gif": "/static/media/otter.f8ccf464110a8e84fd64.gif",
+    "static/media/saltlake.jpg": "/static/media/saltlake.6265bc67b5fb8ee628c3.jpg",
+    "static/media/cafenone.webp": "/static/media/cafenone.b57317b47a5353347557.webp",
+    "index.html": "/index.html",
+    "main.71abad35.css.map": "/static/css/main.71abad35.css.map",
+    "main.67e07c0e.js.map": "/static/js/main.67e07c0e.js.map",
+    "453.48937e7d.chunk.js.map": "/static/js/453.48937e7d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71abad35.css",
+    "static/js/main.67e07c0e.js"
+  ]
+}
